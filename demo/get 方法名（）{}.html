@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .id{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+  }
+</style>
+<body>
+  <div class="id" ></div>
+  <br>
+  <div class="id" onclick="func(this)" ></div>
+</body>
+<!-- 
+  对象内的get发方法代替了传统的键值对 但是是隐式 不能使用call apply  bind
+  调用get方法是执行函数省去了  由函数名+（）调用函数  改为函数名调用函数 
+-->
+<script>
+  // var obj={
+  //   a: 1,
+  //   b: 2,
+  //   get c(){return this.a}  ,
+  //   d(){return this.a}  
+  // };
+  // console.log(obj.c);
+  // console.log(obj.d);  
+  // console.log([1,2],[1,2]);
+</script>
+
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .id{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+  }
+</style>
+<body>
+  <div class="id" ></div>
+  <br>
+  <div class="id" onclick="func(this)" ></div>
+</body>
+<!-- bind绑定过一次，第二次bind会改变this指向吗？
+正确回答是：this永远指向第一次bind绑定的函数。
+-->
+<script>
+  const boxDiv = document.querySelector('.id');
+  // boxDiv.
+  // boxDiv.onclick = (function(){
+  //   console.log(this);
+  // }.bind(boxDiv))
+  boxDiv.onclick = function(){
+    console.log(this);
+  };
+  function func(obj){
+    console.log(obj);
+    // console.log(this);
+  }
+</script>
+
+
+</html>

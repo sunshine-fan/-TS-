@@ -20,15 +20,5 @@ class stack<T>{
   }
 }
 export default stack; 
-// let stack1 = new stack<string>()
-// stack1.push("aaa")
-// stack1.push("bbb")
-// stack1.push("ccc")
-// stack1.push("ddd")
-// console.log(stack1);
-// console.log(stack1.peek());
-// console.log(stack1.pop());
-// console.log(stack1.pop());
-// console.log(stack1.isEmpty());
-// console.log(stack1.size());
+
 

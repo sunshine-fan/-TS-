@@ -19,13 +19,13 @@ class BSTree<T>{
     // if(newNode.value=oldNode.value) return "不符合二叉搜索树条件";
     if(newNode.value<oldNode.value){
       if(oldNode.left!==null){
-        this.insert(newNode,oldNode.left!);
+        this.insert(newNode,oldNode.left);
       }else{
         oldNode.left = newNode;
       }
     }else{
         if(oldNode.right!==null){
-          this.insert(newNode,oldNode.right!)
+          this.insert(newNode,oldNode.right)
         }else{
           oldNode.right = newNode
         }

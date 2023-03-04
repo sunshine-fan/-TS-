@@ -1,4 +1,3 @@
-// 创建Node节点类
 class Node<T>{
   value:T
   next:Node<T> | null = null
@@ -6,7 +5,6 @@ class Node<T>{
     this.value = value
   }
 }
-
 //创建LinkedList的类
 class LinkedList<T>{
   private head:Node<T> | null = null
@@ -115,7 +113,6 @@ list.append(3)
 list.insert(9,2)
 list.insert(8,4)
 console.log(list.traverse());
-// list.removeAt(2)
 console.log(list.removeAt(2)); //删除操作
 console.log(list.traverse());
 console.log(list.get(3)); //8 
